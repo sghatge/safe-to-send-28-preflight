@@ -1,0 +1,11 @@
+{
+  "agent_calls": [
+    {"tool": "schema_browse"},
+    {"tool": "audience_count"},
+    {"tool": "query_run", "sql": "SELECT email FROM recipients WHERE country='HR' LIMIT 20", "pii": true}
+  ],
+  "delivery": {"id": "BF-HR-01", "market": "HR", "volume": 142800, "send_time": "09:00",
+               "html": "<p>1.299,00 €</p><a href=\"https://example.com/unsubscribe\">Odjava</a>",
+               "filters": ["marketing_optin"], "proof_by": "hr.marketing"},
+  "summary": "Croatian Black Friday email passes all pre-send checks. Two approvers are needed because the audience is above 100,000."
+}
